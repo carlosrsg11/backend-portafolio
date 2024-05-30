@@ -16,6 +16,7 @@ import * as Joi from '@hapi/joi';
         DB_NAME: Joi.string().required(),
         DB_USER: Joi.string().required(),
         DB_PASS: Joi.string().required(),
+        POSTGRES_SSL: Joi.boolean().required(),
       }),
     }),
     TypeOrmModule.forRoot({
